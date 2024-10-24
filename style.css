@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Inter Tight", sans-serif;
+}
+
+body {
+    background-color: #a20e20;
+}
+
+/*Logo + ikigai + menu de navegação*/
+header {
+    margin: 10px 20px;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.nav-link:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+#logo img {
+    width: 70px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo > p {
+    padding: 0 20px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*Texto ikigai e tela inicial app*/
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 50px 50px 50px;
+}
+
+.image img {
+    height: 550px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+}
+
+.text {
+    color: white;
+}
+
+.ikigai {
+    font-weight: bolder;
+    font-size: 8vw;
+}
+
+.Viver-plenamente {
+    font-weight: 300;
+    font-size: 4vw;
+    text-indent: 100px;
+}
+
+/*Css para criar o menu responsivo com js*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/*Section sobre aplicativo*/
+
+.conteiner-sobre-aplicativo {
+    background-color: white;
+    color: black;
+    padding: 5%;
+    display: block;
+}
+
+.conteiner-sobre-aplicativo > h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 2.5vw;
+}
+
+.conteiner-sobre-aplicativo > p {
+    text-align: center;
+    margin: 0 10%;
+}
+
+.container-img-topicos {
+    display: flex;
+    margin: 50px;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img-topicos img {
+    width: 100%;
+
+}
+
+.container-img-topicos div {
+    text-align: left;
+    flex: 1;
+}
+
+.topicos {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.087);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5% 0;
+}
+
+.topicos p {
+    font-size: 1vw;
+}
+
+.topicos h3 {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.verificar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 3% 0;
+}
+
+.verificar img {
+    height: 25px; /* Defina um tamanho fixo ou relativo */
+    width: 25px;  /* Mantém a imagem quadrada */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+
+/*Construção do chat da página */
+
+.container-phone {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    padding-top: 50px;
+}
+
+.header h1 {
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.header p {
+    font-size: 16px;
+    margin: 0 10%;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-item img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.2vw;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.feature-item p {
+    font-size: 1vw;
+    font-weight: 200;
+}
+
+.phone-section img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/*Carrosel interface*/
+
+.carousel-inner {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(img/flecha\ -\ direita.png);
+}
+  
+.carousel-control-next-icon {
+    background-image: url(img/flecha-esquerda.png);
+}
+
+.carousel-control-next {
+    right: 30%; /* Ajuste a distância da seta esquerda da borda */
+}
+
+.carousel-control-prev {
+    left: 30%;
+}
+
+.container-interface {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.container-interface h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 1.5vw;
+}
+
+.container-interface p {
+    font-size: 1vw;
+    margin: 0 10%;
+}
+
+/*Nosso time*/
+
+.team {
+    text-align: center;
+    padding: 2rem;
+    background-color: #a20e20;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+
+.member-card > p > a {
+    color: rgb(0, 0, 0);
+}
+
+.member-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team h2 {
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.team p {
+    font-size: 1vw;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    /*Responsividade do menu de navegação*/
+    header {
+        margin: 10px 0;
+    }
+
+    #logo > p {
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-item {
+        display: none;
+        margin: 1px 0;
+        background-color: #820918;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
+
+    /*Responsividade do menu de navegação no mobile*/
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon img {
+        width: 25px;
+        margin: 10px;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .nav-item {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .menu-mobile {
+        width: 100%;
+    }
+
+    /*Classe será utilizado pelo js para mostrar o menu responsivo*/
+
+    .open {
+        display: block;
+    }
+    
+    /*Responsividade texto ikigai + img juntas*/
+    .container {
+        flex-direction: column; /* Coloca a imagem abaixo do texto */
+        align-items: center;
+        margin: auto;
+    }
+
+    .ikigai {
+        font-size: 60px; /* Reduz o tamanho da fonte para melhor adaptação */
+        text-align: center;
+    }
+
+    .Viver-plenamente {
+        font-size: 35px; /* Reduz o tamanho da fonte */
+        text-indent: 0; /* Remove a indentação para telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .image {
+        margin: 50px 0;
+    }
+
+    .image img {
+        height: auto; /* Ajusta a altura da imagem para se adaptar ao tamanho da tela */
+        width: 100%; /* Faz a imagem ocupar toda a largura da tela */
+        max-width: 100vw; /* Limita a largura da imagem para não ultrapassar o viewport */
+        object-fit: cover; /* Mantém a proporção da imagem sem distorções */
+    }
+
+    /*Responsividade sobre aplicativo*/
+
+    .container-img-topicos {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .container-img-topicos img {
+        height: auto;
+        width: 100%;
+        max-width: 100vw;
+        object-fit: cover; 
+    }
+
+    .verificar {
+        flex-direction: row; /* Mantém a linha em telas intermediárias */
+        justify-content: flex-start;
+    }
+
+    .verificar img {
+        height: 35px; /* Ajusta o tamanho da imagem em telas menores */
+        width: 35px;  /* Mantém a imagem quadrada */
+    }
+
+    /* Responsividade do telefone com informações ao redor*/
+    .features-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phone-section {
+        margin-bottom: 20px;
+    }
+
+    /*Responsividade carrossel*/
+    .carousel-control-next {
+    right: 5%; /* Ajusta a distância da seta direita */
+    }
+
+    .carousel-control-prev {
+    left: 5%; /* Ajusta a distância da seta esquerda */
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .topicos p {
+        font-size: 3vw;
+    }
+
+    .topicos h3 {
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .container-img-topicos {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .header h1 {
+        font-size: 6vw;
+    }
+
+    .header p {
+        font-size: 3vw;
+    }
+
+    .conteiner-sobre-aplicativo > h2 {
+        text-align: center;
+        margin: 15px;
+        font-size: 6vw;
+    }
+
+    .conteiner-sobre-aplicativo > p {
+        font-size: 3vw;
+    }
+
+    .text p {
+        text-indent: 0;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .features-column {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .feature-item p {
+        font-size: 3vw;
+    }
+    
+    .feature-item h3 {
+        font-size: 4vw;
+    }
+
+    .container-interface h2 {
+        font-size: 6vw;
+    }
+
+    .container-interface p {
+        font-size: 3vw;
+    }
+
+    .phone-section {
+        margin-bottom: 20px;
+    }
+
+    .team h2 {
+        font-size: 6vw;
+    }
+
+    .team p {
+        font-size: 3vw;
+    }
+}
